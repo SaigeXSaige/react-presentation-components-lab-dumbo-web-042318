@@ -37,20 +37,20 @@ describe('<SimpleComponent />', () => {
     );
   });
 
-  it('when clicked the div should toggle the state to "sad"', () => {
-    wrapper.find('div').simulate('click');
-    expect(wrapper.state().mood).to.equal(
-      'sad',
-      'Mood state not "sad" after click.'
-    );
-  });
+  // it('when clicked the div should toggle the state to "sad"', () => {
+  //   wrapper.find('div').simulate('click');
+  //   expect(wrapper.state().mood).to.equal(
+  //     'sad',
+  //     'Mood state not "sad" after click.'
+  //   );
+  // });
 
-  it('after click, "sad" state should be accurately rendered', () => {
-    wrapper.find('div').simulate('click');
-    expect(wrapper.find('div').text()).to.equal(
-      'sad',
-      'Mood state incorrectly rendered after click.'
-    );
-  });
+  // it('after click, "sad" state should be accurately rendered', () => {
+  //   wrapper.find('div').simulate('click');
+  //   expect(wrapper.find('div').text()).to.equal(
+  //     'sad',
+  //     'Mood state incorrectly rendered after click.'
+  //   );
+  // });
 
 });
